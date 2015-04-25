@@ -1,0 +1,9 @@
+تفعيل server AUR وتنصيب yaourt بسطر واحد
+
+echo -e "[archlinuxfr]\nSigLevel=Never\nServer=http://repo.archlinux.fr/\$arch" |sudo tee -a /etc/pacman.conf && sudo pacman -Sy yaourt --noconfirm
+
+هام :إذا كنت قد قمت مسبقا بتفعيل server AUR وقمت بكتابة هذا الأمر في الأعلى ستحصل على مشكلة لأنه سيضيف ال server مرة أخرى لهذا لا تنفذ الكود في الأعلى
+لهذا إذا كنت غير متأكد أنك قد أضفت ال server سابقا أو لا تعلم الكثير عن الموضوع إستعمل الكود في الأسفل هو كود لتنزيل وتشغيل سكربت python بسيط من برمجتي يفحص إذا كان server AUR مفعل وعلى ضوء النتيجه يقوم بتفعيل ال server من دون تدخل منك أو يقول لك أن السرفر مفعل ولا يفعل شيء​
+
+cd  && wget https://www.dropbox.com/s/fm0q9xf3zb0ltiu/yucef_add_yaourt.zip &&unzip yucef_add_yaourt.zip &&cd yucef_add_yaourt &&sudo chmod 755 yucef_add_yaourt.py&&./yucef_add_yaourt.py
+
