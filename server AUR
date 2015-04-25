@@ -1,4 +1,8 @@
+
+
+
 تفعيل server AUR وتنصيب yaourt بسطر واحد
+
 
 echo -e "[archlinuxfr]\nSigLevel=Never\nServer=http://repo.archlinux.fr/\$arch" |sudo tee -a /etc/pacman.conf && sudo pacman -Sy yaourt --noconfirm
 
