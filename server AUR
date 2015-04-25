@@ -7,3 +7,11 @@ echo -e "[archlinuxfr]\nSigLevel=Never\nServer=http://repo.archlinux.fr/\$arch" 
 
 cd  && wget https://www.dropbox.com/s/fm0q9xf3zb0ltiu/yucef_add_yaourt.zip &&unzip yucef_add_yaourt.zip &&cd yucef_add_yaourt &&sudo chmod 755 yucef_add_yaourt.py&&./yucef_add_yaourt.py
 
+
+
+
+
+
+
+
+
